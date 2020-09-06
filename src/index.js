@@ -5,7 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div> Hello team a`m Ivan/ I create react app</div>,
+  <div> Hello test</div>,
   document.getElementById('root')
 );
 
