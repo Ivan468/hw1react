@@ -12,7 +12,6 @@ const Users = ({
   shares, time
 }) => {
   return (
-      
     <div className="post">
       <div style={{ backgroundImage }} className="img"></div>
       <div>
