@@ -1,61 +1,41 @@
-import React, { Component } from "react";
+import  React, { Component } from "react";
 
 const Information = [
   {
-    "name":"Samule",
-    "age":21,
-    "country":"USA"
+    firstName: "Барней",
+    lastName: "Стинсовський",
+    phone: "+380956319521",
+    gender: "male",
   },
   {
-    "name":"Sam",
-    "age":21,
-    "country":"USA"
+    firstName: "Робін",
+    lastName: "Щербатська",
+    phone: "+380931460123",
+    gender: "female",
   },
   {
-    "name":"Mark",
-    "age":21,
-    "country":"Africa"
+    firstName: "Анонімний",
+    lastName: "Анонімус",
+    phone: "+380666666666",
   },
   {
-    "name":"Markus",
-    "age":21,
-    "country":"Africa"
+    firstName: "Лілія",
+    lastName: "Олдровна",
+    phone: "+380504691254",
+    gender: "female",
   },
   {
-    "name":"Aayush",
-    "age":21,
-    "country":"India"
+    firstName: "Маршен",
+    lastName: "Еріксонян",
+    phone: "+380739432123",
+    gender: "male",
   },
   {
-    "name":"Sean",
-    "age":21,
-    "country":"Ireland"
+    firstName: "Теодор",
+    lastName: "Мотсбес",
+    phone: "+380956319521",
+    gender: "male",
   },
-  {
-    "name":"Eduardo",
-    "age":21,
-    "country":"France"
-  },
-  {
-    "name":"Dustin",
-    "age":21,
-    "country":"Spain"
-  },
-  {
-    "name":"Alexendra",
-    "age":21,
-    "country":"USA"
-  },
-  {
-    "name":"Lee",
-    "age":21,
-    "country":"China"
-  },
-  {
-    "name":"Jim",
-    "age":21,
-    "country":"Korea"
-  }
 ];
 
 export default Information;

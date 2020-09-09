@@ -5,7 +5,7 @@ import EpyphnyImg from "./components/img/EhN8T5hWoAYlzOx.jpg";
 import belarus from "./components/img/belarus.jpg";
 import navalny from "./components/img/F2Aws-10.jpg";
 import china from "./components/img/q_0-Yddo.jpg";
-import Contacts from "./components/contacts";
+// import Contacts from "./components/contacts";
 import AppSear from "./components/searchfilter";
 
 const userList = [
