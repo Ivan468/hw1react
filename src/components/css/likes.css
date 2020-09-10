@@ -1,0 +1,15 @@
+.lekes_wrapper {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 18px;
+   
+}
+
+.like {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
