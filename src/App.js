@@ -5,6 +5,7 @@ import Users from "./components/users";
 import AppSear from "./components/searchfilter";
 import Timer from "./components/timer";
 import { userList } from "./components/info-json";
+import TimerTwo from "./components/timer_two";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       ))}
       {/* <Contacts/>   */}
       <AppSear />
-      <Timer />
+      {/* <Timer /> */}
+      <TimerTwo/>
     </div>
   );
 }

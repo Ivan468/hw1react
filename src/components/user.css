@@ -102,3 +102,9 @@ h3 {
     width: 500px;
     margin: auto;
 }
+
+.timer {
+
+  background-color: burlywood;
+  min-height: 500px;
+}

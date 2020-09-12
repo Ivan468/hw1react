@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import "./css/likes.css";
-import likesimg from "./img/heart.svg";
-import likesimgfull from "./img/heart1.svg";
 
 
-  
-export default class Timer extends Component {
+ 
+export default class TimerTwo extends Component {
   state = {
     isActive: false,
-     count: 123,
+     count: 201,
   };
   
   get likesCount() {
@@ -19,6 +16,8 @@ export default class Timer extends Component {
   componentDidMount(){
     setInterval(this.increseLikesCount, 1000)
   }
+
+  
 
   likesToogle = (e) => {
     this.setState((prevState) => {
@@ -31,7 +30,7 @@ export default class Timer extends Component {
   increseLikesCount = () => {
       this.setState((prevState)=>{
         return {
-          count: prevState.count + 1
+          count: prevState.count - 1
         }
       })
 
@@ -43,15 +42,10 @@ export default class Timer extends Component {
   render() {
     const { isActive } = this.state;
     return (
-      <div className="lekes_wrapper">
-        {/* <h2> hw3 React Методи життєвого циклу </h2> */}
-        <div className="Likes-count">{this.likesCount}</div>
-        <img
-          src={isActive ? likesimgfull : likesimg}
-          alt=""
-          className={`like`}
-          onClick={this.likesToogle}
-        />
+      <div className="timer">
+        <h2> hw3 React Методи життєвого циклу </h2>
+        <h3 className="Likes-count">{this.likesCount}</h3>
+        
       </div>
     );
   }
