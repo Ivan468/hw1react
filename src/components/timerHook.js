@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const Timer = (props) => {
   const [seconds, setSeconds] = useState(props.time);
   const [isActive, setIsActive] = useState(props.autostart);
+ 
 
   function toggle() {
     setIsActive(!isActive);
@@ -30,6 +31,7 @@ const Timer = (props) => {
     <div className="app">
       <div className="time">{seconds}s</div>
       {console.log(` залишилось ${seconds} секунд  `)}
+      {console.log(`  ${props.autostart}   `)}
       <div className="row">
         <button onClick={toggle}>{isActive ? "Pause" : "Start"}</button>
         <button className="button" onClick={reset}>
