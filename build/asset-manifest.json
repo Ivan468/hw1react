@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/hw1react/static/css/main.4a094cc1.chunk.css",
+    "main.js": "/hw1react/static/js/main.0d297644.chunk.js",
+    "main.js.map": "/hw1react/static/js/main.0d297644.chunk.js.map",
+    "runtime-main.js": "/hw1react/static/js/runtime-main.af6dc9d1.js",
+    "runtime-main.js.map": "/hw1react/static/js/runtime-main.af6dc9d1.js.map",
+    "static/js/2.6e7475a0.chunk.js": "/hw1react/static/js/2.6e7475a0.chunk.js",
+    "static/js/2.6e7475a0.chunk.js.map": "/hw1react/static/js/2.6e7475a0.chunk.js.map",
+    "index.html": "/hw1react/index.html",
+    "precache-manifest.3bb73cd02924fedd24d6ba1d5a954062.js": "/hw1react/precache-manifest.3bb73cd02924fedd24d6ba1d5a954062.js",
+    "service-worker.js": "/hw1react/service-worker.js",
+    "static/css/main.4a094cc1.chunk.css.map": "/hw1react/static/css/main.4a094cc1.chunk.css.map",
+    "static/js/2.6e7475a0.chunk.js.LICENSE.txt": "/hw1react/static/js/2.6e7475a0.chunk.js.LICENSE.txt",
+    "static/media/EhN8T5hWoAYlzOx.jpg": "/hw1react/static/media/EhN8T5hWoAYlzOx.21bafa00.jpg",
+    "static/media/F2Aws-10.jpg": "/hw1react/static/media/F2Aws-10.0d3e1a73.jpg",
+    "static/media/belarus.jpg": "/hw1react/static/media/belarus.8ae11037.jpg",
+    "static/media/heart.svg": "/hw1react/static/media/heart.7746f5e4.svg",
+    "static/media/heart1.svg": "/hw1react/static/media/heart1.a8cd76c1.svg",
+    "static/media/q_0-Yddo.jpg": "/hw1react/static/media/q_0-Yddo.f5840484.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af6dc9d1.js",
+    "static/js/2.6e7475a0.chunk.js",
+    "static/css/main.4a094cc1.chunk.css",
+    "static/js/main.0d297644.chunk.js"
+  ]
+}
