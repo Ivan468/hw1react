@@ -11,9 +11,44 @@ export default class TimerTwo extends Component {
     const { isActive, count } = this.state;
     return count + (isActive ? 1 : 0);
   }
+
+  // componentDidMount() {
+  //   this.timerID = setInterval(
+  //     () => this.tick(),
+  //     1000
+  //   );
+  // }
+
+  // componentWillUnmount() {
+  //   clearInterval(this.timerID);
+  // }
+
+  // tick() {
+  //   this.setState((prevState) => {
+  //     return {
+  //       count: prevState.count - 1,
+  //     };
+  //   });
+  //   this.onTick();
+  // }
+
   componentDidMount() {
-    setInterval(this.increseLikesCount, 1000);
+    let a = this.state.isActive;
+
+    if (a) {
+     
+      return setInterval(this.increseLikesCount, 1000);
+    } else {
+      return 0;
+    }
   }
+
+  start = () => {
+    this.setState({
+      isActive: true,
+    });
+    console.log("TimerTwo -> start -> isActive", this.state.isActive);
+  };
 
   likesToogle = (e) => {
     this.setState((prevState) => {
@@ -43,6 +78,7 @@ export default class TimerTwo extends Component {
       <div className="timer">
         <h2> hw3 React Методи життєвого циклу </h2>
         <h3 className="Likes-count">{this.likesCount}</h3>
+        <button onClick={this.start}> start</button>
       </div>
     );
   }

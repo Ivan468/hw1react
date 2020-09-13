@@ -6,6 +6,7 @@ import AppSear from "./components/searchfilter";
 import Timer from "./components/timer";
 import { userList } from "./components/info-json";
 import TimerTwo from "./components/timer_two";
+import TimerHook from "./components/timerHook";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       {/* <Contacts/>   */}
       <AppSear />
       {/* <Timer /> */}
-      <TimerTwo/>
+      {/* <TimerTwo/> */}
+      <h2 style={{marginTop: "40px"}}>Timer</h2>
+      <TimerHook time="1000" autostart="true"/>
     </div>
   );
 }
