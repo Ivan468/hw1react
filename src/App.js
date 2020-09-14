@@ -19,8 +19,8 @@ function App() {
       {/* <Timer /> */}
       {/* <TimerTwo/> */}
       <h2 style={{marginTop: "40px"}}>Timer</h2>
-      <TimerHook time="1000" autostart="true"  />
-      <TimerHook time="100" autostart="false"/> 
+      <TimerHook time="1000" autostart="true" int="1" name="першому таймеру"/>
+      <TimerHook time="100" autostart="false" int="3" name="другому таймеру" /> 
     </div>
   );
 }

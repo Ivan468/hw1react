@@ -13,14 +13,18 @@ const Timer = (props) => {
     setSeconds(0);
     setIsActive(false);
   }
-  
+
+  let int = props.int;
+  let inttime = int * 1000;
+
   useEffect(() => {
     let interval = null;
+
     if (isActive) {
       interval = setInterval(() => {
-        setSeconds((seconds) => seconds - 1);
+        setSeconds((seconds) => seconds - int);
   
-      }, 1000);
+      }, inttime);
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval);
     }
@@ -30,7 +34,7 @@ const Timer = (props) => {
   return (
     <div className="app">
       <div className="time">{seconds}s</div>
-      {console.log(` залишилось ${seconds} секунд  `)}
+      {console.log(` ${props.name}  залишилось ${seconds} секунд  `)}
       {console.log(`  ${props.autostart}   `)}
       <div className="row">
         <button onClick={toggle}>{isActive ? "Pause" : "Start"}</button>
