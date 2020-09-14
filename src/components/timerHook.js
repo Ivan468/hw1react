@@ -33,9 +33,10 @@ const Timer = (props) => {
   
 
   function Sec() {
-
+    let procent = 100;
     if (seconds > 100) {
-      return 100 - (100/seconds) 
+
+      return procent  = procent -(procent/seconds) 
     } else {
       return seconds
     }
