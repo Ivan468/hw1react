@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {  ThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
 
 function Copyright() {
   return (
@@ -48,9 +49,16 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp() {
   const classes = useStyles();
+  const darctheme = createMuiTheme({
+    palette: {
+      type: 'dark',
+    },
+  });
+
 
   return (
     <Container component="main" maxWidth="xs">
+     <ThemeProvider theme={darctheme}> 
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -135,6 +143,7 @@ export default function SignUp() {
       <Box mt={5}>
         <Copyright />
       </Box>
+      </ThemeProvider> 
     </Container>
   );
 }

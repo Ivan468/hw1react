@@ -12,10 +12,11 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {  ThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
 
 function Copyright() {
     return (
-      <Typography variant="body2" color="textSecondary" align="center">
+      <Typography variant="body2" color="textSecondary" align="center" >
         {'Copyright © '}
         <Link color="inherit" href="https://material-ui.com/">
           Your Website
@@ -25,6 +26,8 @@ function Copyright() {
       </Typography>
     );
   }
+
+ 
   
   const useStyles = makeStyles((theme) => ({
     paper: {
@@ -32,6 +35,7 @@ function Copyright() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+ 
     },
     avatar: {
       margin: theme.spacing(1),
@@ -40,20 +44,30 @@ function Copyright() {
     form: {
       width: '100%', // Fix IE 11 issue.
       marginTop: theme.spacing(1),
+     
     },
     submit: {
       margin: theme.spacing(3, 0, 2),
     },
+    
   }));
 
 
- function SignIn() {
+  export default function SignIn() {
     const classes = useStyles();
+
+    const dacrkthem = createMuiTheme({
+        palette: {
+          type: 'dark',
+        },
+      });
   
     return (
-      <Container component="main" maxWidth="xs">
+        
+      <Container component="main" maxWidth="xs" >
+      <ThemeProvider theme={dacrkthem}> 
         <CssBaseline />
-        <div className={classes.paper}>
+        <div className={classes.paper} >
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
@@ -113,6 +127,7 @@ function Copyright() {
         <Box mt={8}>
           <Copyright />
         </Box>
+        </ThemeProvider>
       </Container>
     );
   }
@@ -120,4 +135,4 @@ function Copyright() {
 
 
 
-export default SignIn;
+  
