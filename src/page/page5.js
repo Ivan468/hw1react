@@ -1,46 +1,37 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Gallery from './galery';
-
+import Gallery from "./galery";
 
 const Page5 = () => (
-    <div>
+  <div>
     <Router>
       <div>
         <ul>
           <li>
-            <Link to="/page1">cartinki</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <Link to="/page2">About</Link>
-          </li>
-          <li>
-            <Link to="/page3">Dashboard</Link>
+            <Link to="/page2">Зображення і текст</Link>
           </li>
         </ul>
 
         <hr />
         <Switch>
-          <Route exact path="/page1">
-            <Gallery/>
+          <Route exact path="/gallery">
+            <Gallery />
           </Route>
           <Route path="/page2">
-              About
-          </Route>
-          <Route path="/page3">
-            hekildsa
+            <h2> Текст і pображення</h2>
+            <img
+              src="https://images.unsplash.com/photo-1591082053831-f9626f2bfca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+              alt=" "
+              style={{ width: "1100px", height: "auto" }}
+            />
           </Route>
         </Switch>
       </div>
     </Router>
-
-
-
-    </div>
-
-
-
+  </div>
 );
-
 
 export default Page5;
