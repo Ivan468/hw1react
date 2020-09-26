@@ -10,7 +10,15 @@ function tweets(state = [], action) {
   return state;
 }
 
-function followers(state = 0, action) {
+function followers(state = [], action) {
+    if (action.type === "ADD_NAME") {
+        if (action.value === "Curse word") {
+          return state;
+        }
+        return [...state, action.value];
+      }
+
+
   return state;
 }
 

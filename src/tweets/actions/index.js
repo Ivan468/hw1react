@@ -4,3 +4,13 @@ export function addTweet(tweet){
       value: tweet
     }
    }
+
+   export function addName(name){
+    return {
+      type:"ADD_NAME",
+      value: name
+    }
+   }
+
+
+//    ADD_NAME

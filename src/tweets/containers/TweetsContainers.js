@@ -3,7 +3,8 @@ import Tweets  from "../Tweets";
 
 function mapStateToProps(state){
  return{
-   tweets:state.tweets
+   tweets:state.tweets,
+   names:state.followers
  }
 }
 

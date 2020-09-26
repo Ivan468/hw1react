@@ -6,8 +6,10 @@ export default{
     comments:[
   
     ],
-    followers:0,
+    followers:[
+        "Maria", "Quake"
+],
     users:[
-  
+            "ivan", "jon"
     ]
   }
