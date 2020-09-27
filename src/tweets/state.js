@@ -1,15 +1,6 @@
-export default{
-    tweets:[
-      "I love react",
-      "I love redux"
-    ],
-    comments:[
+export default {
+  tweets: ["I love react", "I love redux"],
+ 
+  followers: ["Maria", "Quake", "Marsaia", "Quakasde"],
   
-    ],
-    followers:[
-        "Maria", "Quake"
-],
-    users:[
-            "ivan", "jon"
-    ]
-  }
+};
