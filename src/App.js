@@ -12,12 +12,13 @@ import Posts from "./components/post/Posts"
 // import Contacts from "./components/contacts";
 // import TimerTwo from "./components/timer_two";
 // import Timer from "./components/timer";
-import AddTweet from "./tweets/AddTweet"
-import MiddleColumn from "./tweets/MiddleColumn"
-import storeTwo from "./tweets/store"
+
+import {storeTwo } from "./tweets/store"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import PostForm from "./components/post/PostForm";
+ 
 import { Provider } from "react-redux";
+import PostForm from "./tweets/PostForm";
+import AllPost from "./tweets/AllPost";
 
 function App() {
   return (
@@ -55,8 +56,8 @@ function App() {
           <Route path="/hw6">
           <Provider store={storeTwo}>
               {/* test */}
-            <AddTweet />
-            <MiddleColumn />
+            <PostForm />
+            <AllPost/>
           </Provider>
             
           </Route>
