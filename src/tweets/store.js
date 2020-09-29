@@ -5,6 +5,9 @@ import postReducer from './redusers/postReducer';
 
 
 export const storeTwo = createStore(postReducer);
+
+
+
 //we need our data to put in the database
 // import state from "./state";
 // import reducers from "./redusers/index";
