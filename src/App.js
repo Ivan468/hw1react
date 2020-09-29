@@ -8,17 +8,19 @@ import AppSear from "./components/searchfilter";
 import Header from "./page/header";
 import Page3 from "./page/page3";
 import Page5 from "./page/page5";
-import Posts from "./components/post/Posts"
+
 // import Contacts from "./components/contacts";
 // import TimerTwo from "./components/timer_two";
 // import Timer from "./components/timer";
 
-import {storeTwo } from "./tweets/store"
+import { storeTwo } from "./tweets/store";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
- 
+
 import { Provider } from "react-redux";
 import PostForm from "./tweets/PostForm";
 import AllPost from "./tweets/AllPost";
+
+import "./tweets/css/index.css";
 
 function App() {
   return (
@@ -47,19 +49,22 @@ function App() {
             <SignUp />
           </Route>
           <Route path="/hw5">
-            <Page5/>
+            <Page5 />
           </Route>
           <Route path="/test6">
-            <PostForm/>
-            <Posts/>
+            {/* <PostForm />
+            <Posts /> */}
           </Route>
           <Route path="/hw6">
-          <Provider store={storeTwo}>
+            <Provider store={storeTwo}>
               {/* test */}
-            <PostForm />
-            <AllPost/>
-          </Provider>
-            
+              <div className="App">
+                <div className="navbar">
+                  <PostForm />
+                  <AllPost />
+                </div>
+              </div>
+            </Provider>
           </Route>
         </Switch>
       </Router>

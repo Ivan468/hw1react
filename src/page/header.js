@@ -23,10 +23,10 @@ export const Header = () => (
         <Link to="/hw5">hw5 HW "ReactJS. Поняття SPA. Навігація."</Link>
       </li>
       <li>
-        <Link to="/test6">Test "Redax"</Link>
+        <Link to="/test6">Test Link</Link>
       </li>
       <li>
-        <Link to="/hw6"> Hw6 "Redax"</Link>
+        <Link to="/hw6"> Hw6 "Redux"</Link>
       </li>
     </ul>
   </nav>
