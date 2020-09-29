@@ -5,10 +5,11 @@ class PostForm extends Component {
     e.preventDefault();
     const title = this.getTitle.value;
     const message = this.getMessage.value;
+    const foto = this.getImg.value;
     const data = {
       id: new Date(),
       title,
-      message,
+      message, foto
     };
     this.props.dispatch({
       type: "ADD_POST",
@@ -16,6 +17,7 @@ class PostForm extends Component {
     });
     this.getTitle.value = "";
     this.getMessage.value = "";
+    this.getImg.value = "";
   };
   render() {
     return (
@@ -29,6 +31,12 @@ class PostForm extends Component {
             placeholder="Введіть Ім'я"
           />
           <br />
+          <input
+            required
+            type="text"
+            ref={(input) => (this.getImg = input)}
+            placeholder="Введіть картинку"
+          />
           <br />
           <textarea
             required

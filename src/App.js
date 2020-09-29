@@ -54,6 +54,7 @@ function App() {
           <Route path="/test6">
             {/* <PostForm />
             <Posts /> */}
+            Test
           </Route>
           <Route path="/hw6">
             <Provider store={storeTwo}>

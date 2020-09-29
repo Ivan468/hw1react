@@ -58,6 +58,7 @@
 
 .post img {
     height: auto;
+    border-radius: 12px;
     width: 100%;
 }
 
@@ -80,7 +81,7 @@
 
 .post {
   background: #fff;
-  width: 60%;
+  max-width: 484px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
