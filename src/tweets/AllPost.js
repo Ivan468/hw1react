@@ -10,7 +10,7 @@ class AllPost extends Component {
             <div>
                 <h1>All Posts</h1>
                 {this.props.posts.map((post) => <Post key={post.id} post={post} />)}
-                {/* {console.log(this.props.posts)} */}
+                {console.log(this.props.posts)}
             </div>
         );
     }

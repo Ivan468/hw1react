@@ -10,7 +10,7 @@ const Timer = (props) => {
   }
 
   function reset() {
-    setSeconds(0);
+    setSeconds(100);
     setIsActive(false);
   }
 
@@ -20,7 +20,7 @@ const Timer = (props) => {
   useEffect(() => {
     let interval = null;
 
-    if (isActive) {
+    if (isActive && seconds !== 0) {
       interval = setInterval(() => {
         setSeconds((seconds) => seconds - int);
       }, inttime);
@@ -61,7 +61,7 @@ const Timer = (props) => {
           }`}
           onClick={toggle}
         >
-          {isActive ? "Pause" : "Start"}
+          {isActive  && seconds !== 0 ? "Pause" : "Start"}
         </button>
         <button className="button" onClick={reset}>
           Reset

@@ -6,10 +6,12 @@ class PostForm extends Component {
     const title = this.getTitle.value;
     const message = this.getMessage.value;
     const foto = this.getImg.value;
+    // const select = this.getSelect.value;
     const data = {
       id: new Date(),
       title,
-      message, foto
+      message,
+      foto,
     };
     this.props.dispatch({
       type: "ADD_POST",
@@ -18,24 +20,32 @@ class PostForm extends Component {
     this.getTitle.value = "";
     this.getMessage.value = "";
     this.getImg.value = "";
+    // this.getSelect.value = "";
   };
   render() {
     return (
       <div className="post-container">
         <h1 className="post_heading">Create Post</h1>
         <form className="form" onSubmit={this.handleSubmit}>
-          <input
+          <select className="input" ref={(input) => (this.getTitle = input)}>
+            <option disabled selected>Виберіть персонажа</option>
+            <option value="Ярина">Ярина</option>
+            <option value="Влад">Влад</option>
+            <option value="Бодя">Бодя</option>
+            <option value="Дарт">Дарт</option>
+          </select>
+          {/* <input
             required
             type="text"
             ref={(input) => (this.getTitle = input)}
             placeholder="Введіть Ім'я"
-          />
+          /> */}
           <br />
           <input
             required
             type="text"
             ref={(input) => (this.getImg = input)}
-            placeholder="Введіть картинку"
+            placeholder="Вставти сюди посилання на картинку"
           />
           <br />
           <textarea
@@ -45,7 +55,6 @@ class PostForm extends Component {
             cols="28"
             placeholder="Розкажіть щось"
           />
-          <br />
           <br />
           <button>Post</button>
         </form>

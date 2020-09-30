@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-.form input {
+.form input, .input {
   height: 44px;
   padding-left: 15px;
   padding-right: 15px;
