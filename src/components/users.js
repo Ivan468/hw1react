@@ -13,7 +13,7 @@ const Users = ({
   shares, time
 }) => {
   return (
-    <div className="post">
+    <div className="postTw">
       <div style={{ backgroundImage }} className="img"></div>
       <div>
         <div className="name">
